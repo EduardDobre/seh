@@ -26,7 +26,7 @@ class Patients extends Component {
    }
 
    componentDidMount() {
-      axios.get('http://hapi.fhir.org/baseR4?_getpages=b6378460-b895-4090-a767-d1e56979a3c7&_getpagesoffset=100&_count=100&_format=json&_pretty=true&_bundletype=searchset')
+      axios.get('http://hapi.fhir.org/baseR4?_getpages=dce849e3-64a4-43e1-9953-88159e24f492&_getpagesoffset=0&_count=100&_format=json&_pretty=true&_bundletype=searchset')
          .then(data => {
             let response = data.data;
             let totalItemsCount = response.length;
